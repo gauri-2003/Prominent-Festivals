@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prominent Festivals of India</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        h2 {
+            color: #16a085;
+        }
+        h3 {
+            color: #2980b9;
+        }
+        dl {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+            cursor: pointer;
+            color: #34495e;
+        }
+        dd, .festival-info {
+            display: none;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .festival-info img {
+            width: 300px;
+            height: 200px;
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+    <script>
+        function toggleInfo(festivalId) {
+            var info = document.getElementById(festivalId);
+            var isVisible = info.style.display === 'block';
+            info.style.display = isVisible ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Prominent Festivals of India</h1>
+
+    <h2>Tamil Nadu</h2>
+    <h3>Famous Festivals:</h3>
+    <dl>
+        <dt onclick="toggleInfo('pongalInfo')">Pongal</dt>
+        <dd id="pongalInfo" class="festival-info">
+            <img src="Pongal.jpg" alt="Pongal Festival">
+            Pongal is a harvest festival celebrated in January. It is dedicated to the Sun God and marks the beginning of the Tamil month Thai.
+        </dd>
+
+        <dt onclick="toggleInfo('karthigaiInfo')">Karthigai Deepam</dt>
+        <dd id="karthigaiInfo" class="festival-info">
+            <img src="Karthigai Deepam.jpg" alt="Karthigai Deepam">
+            Karthigai Deepam is the festival of lights celebrated in the Tamil month of Karthigai (November-December). Lamps are lit to symbolize the victory of light over darkness.
+        </dd>
+
+        <dt onclick="toggleInfo('thaipusamInfo')">Thaipusam</dt>
+        <dd id="thaipusamInfo" class="festival-info">
+            <img src="Thaipusam.jpg" alt="Thaipusam">
+            Thaipusam is a festival celebrated by Tamil Hindus to honor Lord Murugan. Devotees carry 'kavadi' as a symbol of devotion and penance.
+        </dd>
+    </dl>
+
+    <h2>Maharashtra</h2>
+    <h3>Famous Festivals:</h3>
+    <dl>
+        <dt onclick="toggleInfo('ganeshInfo')">Ganesh Chaturthi</dt>
+        <dd id="ganeshInfo" class="festival-info">
+            <img src="Ganesh Chaturthi.jpeg" alt="Ganesh Chaturthi">
+            Ganesh Chaturthi is a ten-day festival celebrating the birth of Lord Ganesha. It is marked by the installation of clay idols of Ganesha in homes and public places.
+        </dd>
+
+        <dt onclick="toggleInfo('gudiPadwaInfo')">Gudi Padwa</dt>
+        <dd id="gudiPadwaInfo" class="festival-info">
+            <img src="Gudi Padwa.jpeg" alt="Gudi Padwa">
+            Gudi Padwa is the Marathi New Year festival, celebrated in March or April. It marks the beginning of the spring season and the start of the Hindu lunisolar calendar.
+        </dd>
+
+        <dt onclick="toggleInfo('diwaliInfo')">Diwali</dt>
+        <dd id="diwaliInfo" class="festival-info">
+            <img src="Diwali.jpg" alt="Diwali">
+            Diwali, the festival of lights, is celebrated across Maharashtra with great enthusiasm. It symbolizes the victory of light over darkness and good over evil.
+        </dd>
+    </dl>
+
+    <h2>West Bengal</h2>
+    <h3>Famous Festivals:</h3>
+    <dl>
+        <dt onclick="toggleInfo('durgaPujaInfo')">Durga Puja</dt>
+        <dd id="durgaPujaInfo" class="festival-info">
+            <img src="Durga Puja.jpg" alt="Durga Puja">
+            Durga Puja is the biggest and most significant festival in West Bengal, celebrating the victory of Goddess Durga over the buffalo demon Mahishasura.
+        </dd>
+
+        <dt onclick="toggleInfo('poushMelaInfo')">Poush Mela</dt>
+        <dd id="poushMelaInfo" class="festival-info">
+            <img src="Poush Mela.jpg" alt="Poush Mela">
+            Poush Mela is an annual fair and festival held in Santiniketan to mark the harvest season. It includes folk music, dance performances, and traditional crafts.
+        </dd>
+
+        <dt onclick="toggleInfo('kaliPujaInfo')">Kali Puja</dt>
+        <dd id="kaliPujaInfo" class="festival-info">
+            <img src="Kali Puja.jpg" alt="Kali Puja">
+            Kali Puja is dedicated to Goddess Kali and is celebrated with devotion, especially in Kolkata, with lighting of lamps, offerings, and firecrackers.
+        </dd>
+    </dl>
+
+</body>
+</html>
